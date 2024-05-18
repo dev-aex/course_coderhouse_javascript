@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OficceMatic</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <!-- header -->
+    <header class="header">
+      <section>
+        <!-- main logo -->
+        <a class="header__logo" href="#">
+          <h1>OfficeMatic</h1>
+        </a>
+      </section>
+    </header>
+    <!-- main -->
+    <main class="app">
+      <!-- Section 1 -->
+      <section class="app__section">
+        <article class="app__column">
+          <section class="app__time">Hora</section>
+          <section class="app__date">fecha</section>
+        </article>
+      </section>
+      <!-- Section 2 -->
+      <section class="app__section">
+        <!-- column 1 -->
+        <article class="app__column">
+          <section class="app__component">Pomodoro</section>
+          <section class="app__component">Calendar</section>
+          <section class="app__component">Calculator</section>
+          <section class="app__component">APIs</section>
+        </article>
+        <!-- column 2 -->
+        <article class="app__column">
+          <section class="app__component">
+            <div class="todo">
+              <div class="todo__input">
+                <input class="todo__write" type="text" placeholder="Write a task"/>
+                <button class="todo__add">Add</button>
+              </div>
+              <div class="todo__output">
+                <ul class="todo__list">
+                </ul>
+              </div>
+            </div>
+          </section>
+        </article>
+        <!-- column 3 -->
+        <article class="app__column">
+          <section class="app__component">Notes</section>
+        </article>
+      </section>
+    </main>
+    <!-- footer -->
+    <footer class="footer">
+      <h2>Created by AEX</h2>
+    </footer>
+    <script src="./app/date-time.js" defer></script>
+    <script src="./app/todo.js" defer></script>
+  </body>
+</html>
