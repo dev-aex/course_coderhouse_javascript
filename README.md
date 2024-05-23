@@ -3,11 +3,12 @@ Repositorio de mi proyecto final del curso de Javascript en CorderHouse.
 
 ## Proyecto
 Estoy creando una aplicación web para oficina que combina todas las herramientas útiles para mejorar la productividad.
-- Lista de tareas
-- Cronómetro Pomodoro
-- Notas
-- Calendario
-- Calculadora
+- Hora y fecha ✅
+- Lista de tareas ✅
+- Cronómetro Pomodoro 🚧
+- Notas 🚧
+- Calendario 🚧
+- Calculadora 🚧
 - Entre otros...
 
 ## Live demo
