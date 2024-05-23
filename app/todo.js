@@ -30,7 +30,7 @@ function formatNewTask(newTask) {
   TODO_CHECK.addEventListener("click", (e) => {
     let parentElement = e.target.parentNode;
     let textElement = parentElement.querySelector(".todo__text");
-    textElement.classList.toggle("check");
+    textElement.classList.toggle("todo__check--checked");
   });
 
   // Display task
@@ -41,4 +41,12 @@ function formatNewTask(newTask) {
 TODO_ADD.addEventListener("click", () => {
   formatNewTask(TODO_WRITE.value);
   TODO_WRITE.value = "";
+  TODO_WRITE.focus()  ;
+});
+
+TODO_WRITE.addEventListener("keydown", (e) => {
+  if (e.key === "Enter") {
+    formatNewTask(TODO_WRITE.value);
+    TODO_WRITE.value = "";
+  }
 });
