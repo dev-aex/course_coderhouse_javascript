@@ -31,15 +31,45 @@
       <!-- Section 1 -->
       <section class="app__section">
         <article class="app__column">
-          <section class="app__time">Hora</section>
-          <section class="app__date">fecha</section>
+          <div class="date-time">
+            <section class="app__time"></section>
+            <section class="app__date"></section>
+          </div>
         </article>
       </section>
       <!-- Section 2 -->
       <section class="app__section">
         <!-- column 1 -->
         <article class="app__column">
-          <section class="app__component">Pomodoro</section>
+          <section class="app__component">
+            <div class="pomodoro">
+              <h3 class="pomodoro__time"></h3>
+              <ul class="pomodoro__buttons-container">
+                <li>
+                  <button id="pomodoro-start-btn" class="button">Start</button>
+                </li>
+                <li>
+                  <button id="pomodoro-pause-btn" class="button">Pause</button>
+                </li>
+                <li>
+                  <button id="pomodoro-reset-btn" class="button">Reset</button>
+                </li>
+              </ul>
+              <div class="pomodoro_graph-container">
+                <span id="pomodoro__focus1" class="pomodoro_graph"></span>
+                <span id="pomodoro__shortrest1" class="pomodoro_graph"></span>
+                <span id="pomodoro__focus2" class="pomodoro_graph"></span>
+                <span id="pomodoro__shortrest2" class="pomodoro_graph"></span>
+                <span id="pomodoro__focus3" class="pomodoro_graph"></span>
+                <span id="pomodoro__shortrest3" class="pomodoro_graph"></span>
+                <span id="pomodoro__focus4" class="pomodoro_graph"></span>
+                <span id="pomodoro__longrest" class="pomodoro_graph"></span>
+              </div>
+              <div>
+                <h3>Pomodoro #<span class="pomodoro__sets">0</span></h3>
+              </div>
+            </div>
+          </section>
           <section class="app__component">Calendar</section>
           <section class="app__component">Calculator</section>
           <section class="app__component">APIs</section>
@@ -54,7 +84,7 @@
                   type="text"
                   placeholder="Write a task"
                 />
-                <button class="todo__add">Add</button>
+                <button class="todo__add button">+ Task</button>
               </div>
               <div class="todo__output">
                 <ul class="todo__list"></ul>
@@ -64,7 +94,14 @@
         </article>
         <!-- column 3 -->
         <article class="app__column">
-          <section class="app__component">Notes</section>
+          <section class="app__component">
+            <div class="notes">
+              <button class="notes__add button">+ Note</button>
+              <div class="notes__output">
+                <ul class="notes__list"></ul>
+              </div>
+            </div>
+          </section>
         </article>
       </section>
     </main>
@@ -74,5 +111,7 @@
     </footer>
     <script src="./app/date-time.js" defer></script>
     <script src="./app/todo.js" defer></script>
+    <script src="./app/notes.js" defer></script>
+    <script src="./app/pomodoro.js" defer></script>
   </body>
 </html>

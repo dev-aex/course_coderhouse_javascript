@@ -39,9 +39,11 @@ function formatNewTask(newTask) {
 }
 
 TODO_ADD.addEventListener("click", () => {
-  formatNewTask(TODO_WRITE.value);
-  TODO_WRITE.value = "";
-  TODO_WRITE.focus()  ;
+  if (TODO_WRITE.value != "") {
+    formatNewTask(TODO_WRITE.value);
+    TODO_WRITE.value = "";
+    TODO_WRITE.focus();
+  }
 });
 
 TODO_WRITE.addEventListener("keydown", (e) => {
