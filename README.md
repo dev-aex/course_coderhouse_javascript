@@ -29,7 +29,9 @@ Es una aplicación web que combina herramientas útiles para mejorar la producti
 
 ### 0.5.1
 **Calculadora**
+
 **Calendario**
+
 **Spotify player**
 
 ## Roadmap
