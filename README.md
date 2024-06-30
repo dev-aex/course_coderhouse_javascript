@@ -1,20 +1,22 @@
-# Proyectos final / Coder House - Javascript
-Repositorio de mi proyecto final del curso de Javascript en CorderHouse.
+# Office-O-Matic
+Es mi proyecto final para clase de javascript en CoderHouse.
 
-## Proyecto
+## Roadmap
 Estoy creando una aplicación web para oficina que combina todas las herramientas útiles para mejorar la productividad.
 - Hora y fecha ✅
 - Lista de tareas ✅ 
-- Cronómetro Pomodoro ✅
+- Pomodoro ✅
 - Notas ✅
-- Calendario 🚧
-- Calculadora 🚧
-- Entre otros...
+- Calculadora ✅
+- Calendario ✅
+- Clima 🚧
+- Diseño final 🚧
+- responsive 🚧
 
 ## Live demo
 [https://dev-aex.github.io/course_coderhouse_javascript/](https://dev-aex.github.io/course_coderhouse_javascript/)
 
-### Info
+### Info cursada
 - Comisión 71340
 - Profesor: Pablo Martín Rovira
 - Tutor: Braian Silva
@@ -24,3 +26,4 @@ Estoy creando una aplicación web para oficina que combina todas las herramienta
 - HTML
 - CSS
 - Javascript
+- Full Calendar
