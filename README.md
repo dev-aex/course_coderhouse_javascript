@@ -1,33 +1,38 @@
 # Office-O-Matic
-Es mi proyecto final para clase de javascript en CoderHouse.
+Proyecto final para clase de javascript en CoderHouse.
 
 ## Descripción
-Estoy creando una aplicación web para oficina que combina todas las herramientas útiles para mejorar la productividad.
+Es una aplicación web que combina herramientas útiles para mejorar la productividad en la oficina.
 
 ## Live demo
 [https://dev-aex.github.io/course_coderhouse_javascript/](https://dev-aex.github.io/course_coderhouse_javascript/)
 
----
 
 ## Changelog
 ### 0.1
-- Estructura HTML y CSS
-- Hora y fecha
+**Estructura HTML y CSS**
+**Hora y fecha**
+
 ### 0.2
-- Lista de tareas
+**Lista de tareas**
+
 ### 0.3
-- Pomodoro
+**Pomodoro**
+
 ### 0.4
-- Notas
+**Notas**
+
 ### 0.4.1
-- LocalStorage
+**LocalStorage**
   - Tareas
   - Notas
-### 0.5.1
-- Calculadora
-- Calendario
 
-### Roadmap
+### 0.5.1
+**Calculadora**
+**Calendario**
+**Spotify player**
+
+## Roadmap
 - Clima 🚧
 - Diseño final 🚧
 - responsive 🚧
