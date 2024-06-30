@@ -251,6 +251,27 @@ body {
   color: #545454;
 }
 
+#calendar {
+  overflow: auto;
+}
+
+.fc-day {
+  width: fit-content;
+  height: fit-content;
+  border: 1rem solid black;
+}
+
+.fc-scroller-liquid-absolute {
+  height: fit-content;
+  width: fit-content;
+}
+
+.fc-daygrid-day-frame, .fc-scrollgrid-sync-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .header {
   padding-top: 6rem;
   display: flex;
