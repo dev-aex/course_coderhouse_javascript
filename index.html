@@ -22,7 +22,7 @@
       <section>
         <!-- main logo -->
         <a class="header__logo" href="#">
-          <h1>OfficeMatic</h1>
+          <h1>Office-O-Matic</h1>
         </a>
       </section>
     </header>
@@ -42,6 +42,7 @@
         <!-- column 1 -->
         <article class="app__column">
           <section class="app__component">
+            <!-- Pomodoro -->
             <div class="pomodoro">
               <h3 class="pomodoro__time"></h3>
               <ul class="pomodoro__buttons-container">
@@ -70,13 +71,15 @@
               </div>
             </div>
           </section>
+          <!-- Calendar -->
           <section class="app__component">Calendar</section>
-          <section class="app__component">Calculator</section>
+          <!-- Weather -->
           <section class="app__component">APIs</section>
         </article>
         <!-- column 2 -->
         <article class="app__column">
           <section class="app__component">
+            <!-- TODO -->
             <div class="todo">
               <div class="todo__input">
                 <input
@@ -88,6 +91,33 @@
               </div>
               <div class="todo__output">
                 <ul class="todo__list"></ul>
+              </div>
+            </div>
+          </section>
+          <!-- Calculator -->
+          <section class="app__component">
+            <div class="calculator">
+              <input type="text" class="calculator__input">
+              <div class="calculator__digits">
+                <button class="digit button" onclick="cleanDigits()">C</button>
+                <button class="digit button" onclick="writeDigit('/')">/</button>
+                <button class="digit button" onclick="writeDigit('*')">*</button>
+                <button class="digit button" onclick="deleteDigit()">←</button>
+                <button class="digit button" onclick="writeDigit('7')">7</button>
+                <button class="digit button" onclick="writeDigit('8')">8</button>
+                <button class="digit button" onclick="writeDigit('9')">9</button>
+                <button class="digit button" onclick="writeDigit('-')">-</button>
+                <button class="digit button" onclick="writeDigit('4')">4</button>
+                <button class="digit button" onclick="writeDigit('5')">5</button>
+                <button class="digit button" onclick="writeDigit('6')">6</button>
+                <button class="digit button" onclick="writeDigit('+')">+</button>
+                <button class="digit button" onclick="writeDigit('1')">1</button>
+                <button class="digit button" onclick="writeDigit('2')">2</button>
+                <button class="digit button" onclick="writeDigit('3')">3</button>
+                <button class="digit button" onclick="showResults()">=</button>
+                <button class="digit button" onclick="writeDigit('%')">%</button>
+                <button class="digit button" onclick="writeDigit('0')">0</button>
+                <button class="digit button" onclick="writeDigit('.')">.</button>
               </div>
             </div>
           </section>
@@ -113,5 +143,6 @@
     <script src="./app/todo.js" defer></script>
     <script src="./app/notes.js" defer></script>
     <script src="./app/pomodoro.js" defer></script>
+    <script src="./app/calculator.js" defer></script>
   </body>
 </html>
