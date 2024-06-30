@@ -273,10 +273,12 @@ body {
 }
 
 .header {
-  padding-top: 6rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  padding-top: 4rem;
+  padding-bottom: 6rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: center;
+  align-items: flex-end;
 }
 
 .header__logo {
@@ -296,4 +298,21 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+hr {
+  margin-bottom: 6rem;
+  margin-inline: 2rem;
+  color: rgb(204, 204, 204);
+}
+
+.author {
+  color: rgb(158, 158, 158);
+}
+
+.header__subtitle {
+  font-size: 1.8rem;
+  font-weight: 400;
+  font-style: italic;
+  color: rgb(152, 152, 152);
 }/*# sourceMappingURL=style.css.map */
