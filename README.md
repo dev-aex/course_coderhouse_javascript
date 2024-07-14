@@ -10,34 +10,31 @@ Es una aplicación web que combina herramientas útiles para mejorar la producti
 
 ## Changelog
 ### 0.1
-**Estructura HTML y CSS**
-**Hora y fecha**
+- **Estructura HTML y CSS**
+- **Hora y fecha**
 
 ### 0.2
-**TODO**
+- **TODO**
 
 ### 0.3
-**Pomodoro Timer**
+- **Pomodoro Timer**
 
 ### 0.4
-**Notas**
+- **Notas**
 
 ### 0.4.1
-**LocalStorage**
+- **LocalStorage**
   - TODO
   - Notes
 
 ### 0.5.1
-**Calculator**
-
-**Calendar library**
-
-**Spotify player**
+- **Calculator**
+- **Calendar library**
+- **Spotify player**
 
 ### 0.6.1
-**Weather API**
-
-**Responsive**
+- **Weather API**
+- **Responsive**
 
 ## Build with
 - HTML
