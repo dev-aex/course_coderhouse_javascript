@@ -1,8 +1,7 @@
 const DISPLAY_TIME = document.querySelector(".pomodoro__time");
-const START_BTN = document.querySelector("#pomodoro-start-btn");
-const PAUSE_BTN = document.querySelector("#pomodoro-pause-btn");
-const RESET_BTN = document.querySelector("#pomodoro-reset-btn");
-const COMPLETE_BTN = document.querySelector("#pomodoro-complete-btn");
+export const START_BTN = document.querySelector("#pomodoro-start-btn");
+export const PAUSE_BTN = document.querySelector("#pomodoro-pause-btn");
+export const RESET_BTN = document.querySelector("#pomodoro-reset-btn");
 
 const BAR_FOCUS1 = document.querySelector("#pomodoro__focus1");
 const BAR_FOCUS2 = document.querySelector("#pomodoro__focus2");
@@ -34,21 +33,19 @@ DISPLAY_SETS.textContent = set;
 
 DISPLAY_TIME.innerHTML = `${time}:${seconds}0`;
 
-START_BTN.addEventListener("click", startPomodoro);
-PAUSE_BTN.addEventListener("click", pausePomodoro);
-RESET_BTN.addEventListener("click", resetPomodoro);
 
-function startPomodoro() {
+
+export function startPomodoro() {
   BAR_FOCUS1.classList.add("focus");
   clearInterval(clock);
   clock = setInterval(countSeconds, 1000);
 }
 
-function pausePomodoro() {
+export function pausePomodoro() {
   clearInterval(clock);
 }
 
-function resetPomodoro() {
+export function resetPomodoro() {
   clearInterval(clock);
   time = focus;
   seconds = 0;

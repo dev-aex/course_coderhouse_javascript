@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>OficceMatic</title>
+    <title>Oficce-O-Matic</title>
+    <link rel="shortcut icon" href="./assets/img/favicon.png" type="image/x-icon">
     <!-- reset -->
     <link rel="stylesheet" href="./reset.css" />
     <!-- style -->
@@ -20,20 +21,22 @@
     <!-- header -->
     <header class="header">
       <section>
-        <p class="author">by AEX. V 0.5.1</p>
+        <p class="author">V0.5.1</p>
       </section>
       <section>
         <!-- main logo -->
         <a class="header__logo" href="#">
           <h1>Office-O-Matic</h1>
         </a>
-          <h2 class="header__subtitle">A collection of tools to survive the crazy office life</h2>
+        <h2 class="header__subtitle">
+          A collection of tools to survive the crazy office life
+        </h2>
       </section>
-      <section class="player">
-        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/1dT5nydCOnVXWPHFuj2tSt?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+      <section>
+        <p class="author">by AEX</p>
       </section>
     </header>
-    <hr>
+    <hr />
     <!-- main -->
     <main class="app">
       <!-- Section 1 -->
@@ -84,7 +87,33 @@
             <div id="calendar"></div>
           </section>
           <!-- Weather -->
-          <section class="app__component">APIs</section>
+          <section class="app__component">
+            <div class="weather">
+              <div class="weather__title">
+                <h3>Weather</h3>
+                <h4>Santo Domingo, DO</h4>
+              </div>
+              <div class="weather__main">
+                <img class="weather__icon" />
+                <p class="weather__temp"></p>
+              </div>
+              <p class="weather__desc"></p>
+              <div class="weather__data">
+                <div class="weather__data-column">
+                  <strong>Feels like</strong>
+                  <p class="weather__feels"></p>
+                </div>
+                <div class="weather__data-column">
+                  <strong>Humidity</strong>
+                  <p class="weather__hum"></p>
+                </div>
+                <div class="weather__data-column">
+                  <strong>Wind Speed</strong>
+                  <p class="weather__wind"></p>
+                </div>
+              </div>
+            </div>
+          </section>
         </article>
         <!-- column 2 -->
         <article class="app__column">
@@ -167,6 +196,20 @@
         <!-- column 3 -->
         <article class="app__column">
           <section class="app__component">
+            <div class="player">
+              <iframe
+                style="border-radius: 12px"
+                src="https://open.spotify.com/embed/playlist/1dT5nydCOnVXWPHFuj2tSt?utm_source=generator&theme=0"
+                width="100%"
+                height="152"
+                frameborder="0"
+                allowfullscreen=""
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                loading="lazy"
+              ></iframe>
+            </div>
+          </section>
+          <section class="app__component">
             <div class="notes">
               <button class="notes__add button">+ Note</button>
               <div class="notes__output">
@@ -179,15 +222,14 @@
     </main>
     <!-- footer -->
     <footer class="footer">
-      <a href="#">GitHub</a>
-      <a href="#">Web</a>
+      <a target="_blank" href="https://github.com/dev-aex">GitHub</a>
+      <a target="_blank" href="https://dev-aex.netlify.app/">Website</a>
     </footer>
-    <script src="./app/date-time.js" defer></script>
-    <script src="./app/todo.js" defer></script>
-    <script src="./app/notes.js" defer></script>
-    <script src="./app/pomodoro.js" defer></script>
-    <script src="./app/calculator.js" defer></script>
-    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.14/index.global.min.js" defer></script>
-    <script src="./app/calendar.js" defer></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.14/index.global.min.js"
+      defer
+    ></script>
+    <script type="module" src="./main.js" defer></script>
+    <script src="./modules/calculator.js" defer></script>
   </body>
 </html>

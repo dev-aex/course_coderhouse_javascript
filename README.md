@@ -14,36 +14,39 @@ Es una aplicación web que combina herramientas útiles para mejorar la producti
 **Hora y fecha**
 
 ### 0.2
-**Lista de tareas**
+**TODO**
 
 ### 0.3
-**Pomodoro**
+**Pomodoro Timer**
 
 ### 0.4
 **Notas**
 
 ### 0.4.1
 **LocalStorage**
-  - Tareas
-  - Notas
+  - TODO
+  - Notes
 
 ### 0.5.1
-**Calculadora**
+**Calculator**
 
-**Calendario**
+**Calendar library**
 
 **Spotify player**
 
-## Roadmap
-- Clima 🚧
-- Diseño final 🚧
-- responsive 🚧
+### 0.6.1
+**Weather API**
+
+**Responsive**
 
 ## Build with
 - HTML
 - CSS
 - Javascript
-- Full Calendar
+- Library
+  - [Full Calendar](https://fullcalendar.io/)
+- API
+  - [Openweather](https://openweathermap.org/)
 
 ## Info cursada
 - Comisión 71340

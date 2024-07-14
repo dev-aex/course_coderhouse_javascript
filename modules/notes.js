@@ -1,14 +1,10 @@
-const NOTES_ADD = document.querySelector(".notes__add");
+export const NOTES_ADD = document.querySelector(".notes__add");
 const NOTES_LIST = document.querySelector(".notes__list");
 
 let notesArray = JSON.parse(localStorage.getItem("notesNames")) || [];
 let notesCounter = localStorage.getItem("notesCounter") || 0;
 
-backUpNotes();
-
-NOTES_ADD.addEventListener("click", addNewNote);
-
-function addNewNote() {
+export function addNewNote() {
   let noteID = `note-${notesCounter}`;
   notesCounter++;
   notesArray.push(noteID);
@@ -44,7 +40,7 @@ function addNewNote() {
   noteText.focus();
 }
 
-function backUpNotes() {
+export function backUpNotes() {
   notesArray.forEach((element) => {
     addNewBackUpNote(element);
   });

@@ -1,24 +1,11 @@
-const TODO_WRITE = document.querySelector(".todo__write");
-const TODO_ADD = document.querySelector(".todo__add");
+export const TODO_WRITE = document.querySelector(".todo__write");
+export const TODO_ADD = document.querySelector(".todo__add");
 const TODO_LIST = document.querySelector(".todo__list");
-const TODO_CLOSE = document.querySelector(".todo__close");
-const TODO_CHECK = document.querySelector(".todo__check");
 
 let tasksDB = JSON.parse(localStorage.getItem("tasks")) || [];
 
-backupTasks();
-
-// Add btn
-TODO_ADD.onclick = function () {
-  if (TODO_WRITE.value != "") {
-    formatNewTask(TODO_WRITE.value);
-    TODO_WRITE.value = "";
-    TODO_WRITE.focus();
-  }
-};
-
 // Format Todo task
-function formatNewTask(newTask) {
+export function formatNewTask(newTask) {
   // Formatting new task
   const TODO_LI = document.createElement("li");
   TODO_LI.classList.add("todo__task");
@@ -58,20 +45,14 @@ function formatNewTask(newTask) {
   TODO_LIST.appendChild(TODO_LI);
 }
 
-// Enter
-TODO_WRITE.addEventListener("keydown", (e) => {
-  if (e.key === "Enter") {
-    formatNewTask(TODO_WRITE.value);
-    TODO_WRITE.value = "";
-  }
-});
-
-function backupTasks() {
+// Backup TODOS
+export function backupTasks() {
   tasksDB.forEach((element) => {
     formatNewTaskBackUp(element);
   });
 }
 
+// Format Backup TODOS
 function formatNewTaskBackUp(newTask) {
   // Formatting new task
   const TODO_LI = document.createElement("li");
@@ -106,6 +87,7 @@ function formatNewTaskBackUp(newTask) {
   TODO_LIST.appendChild(TODO_LI);
 }
 
+// Delete TODOS
 function deleteTask(node, value) {
   tasksDB.forEach((element, index) => {
     if (element == value) {

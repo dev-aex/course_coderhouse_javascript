@@ -12,11 +12,10 @@ let date = fullDate.toLocaleDateString(undefined, {
 
 DATE_DISPLAY.innerHTML = date;
 
-function setTime(){
+export function setTime(){
   let fullTime = new Date();
   let time = fullTime.toLocaleTimeString();
   TIME_DISPLAY.innerHTML = time;
 }
 
-setTime();
-setInterval(setTime, 1000)
+
